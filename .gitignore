@@ -1,5 +1,33 @@
+# Virtual environments
 venv/
+backend/venv/
+env/
+ENV/
+.venv/
+
+# Python cache & compiled files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Django & Database
+*.sqlite3
 db.sqlite3
 *.log
+
+# Environment & Secrets
+.env
+.env.*
+
+# Project specific documentation / notes
+SCHRITTE.md
+
+# IDEs & Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

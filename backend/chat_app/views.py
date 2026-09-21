@@ -19,7 +19,7 @@ def chat_to_dict(chat):
 
 @csrf_exempt
 @require_http_methods(['GET', 'POST'])
-def chat_view(request):
+def chat_messages_view(request):
     if request.method == 'GET':
         chats = Chat.objects.all()
         return JsonResponse([chat_to_dict(chat) for chat in chats], safe=False)
